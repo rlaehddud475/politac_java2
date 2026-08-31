@@ -6,6 +6,7 @@ public class ClassDemo {
 		Keyboard k = new Keyboard("Logitech");
 		
 		Class c = k.getClass();
+		System.out.println(c);
 		System.out.println(c.getName());
 		System.out.println(c.getSimpleName());
 		System.out.println(c.getTypeName());
