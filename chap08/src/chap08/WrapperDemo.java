@@ -1,6 +1,6 @@
 package chap08;
 
-public class WraooerDemo {
+public class WrapperDemo {
 
 	public static void main(String[] args) {
 		Integer bi1 = new Integer(10);
