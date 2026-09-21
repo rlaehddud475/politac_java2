@@ -1,7 +1,6 @@
 package chap10;
 
 import java.util.Arrays;
-ty
 
 public class Lambda1Demo {
 

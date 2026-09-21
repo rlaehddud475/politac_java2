@@ -64,8 +64,8 @@ public class EnglishScore implements Comparable<EnglishScore > {
 				new MathScore("장영실", 98),
 				new MathScore("홍길동", 70)
 			};
-		String name = "김삿갓";
-//		String name = null;
+		//String name = "김삿갓";
+	String name = null;
 		EnglishScore[] ea = {new EnglishScore("김삿갓", 77),new EnglishScore("장영실", 88),new EnglishScore("홍길동", 99)};
 		System.out.println("영어 최고 점수 : "+findBest(ea));
 		System.out.println("수학 최고 점수 : " + findBest(ma));
