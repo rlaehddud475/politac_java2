@@ -2,6 +2,8 @@ package chap10;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
+import java.util.function.Predicate;
 
 public class CarDemo {
 
@@ -25,7 +27,7 @@ public class CarDemo {
         System.out.println();
     }
 
-    public static List<Car> findCars(List<Car> all, CarPredicate cp) {
+    public static List<Car> findCars(List<Car> all, Predicate<Car> cp) {
         List<Car> result = new ArrayList<>();
         for (Car car : all) {
             if (cp.test(car)) {
@@ -35,7 +37,7 @@ public class CarDemo {
         return result;
     }
 
-    public static void printCars(List<Car> all, CarConsumer cc) {
+    public static void printCars(List<Car> all, Consumer<Car> cc) {
         for (Car car : all) {
             cc.accept(car);
         }
