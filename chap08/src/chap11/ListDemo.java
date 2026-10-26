@@ -28,5 +28,7 @@ public class ListDemo {
         System.out.println();
 
         // List<Object> objects = List.of("a", null);
+        
+        
     }
 }
