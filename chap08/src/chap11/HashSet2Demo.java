@@ -19,16 +19,10 @@ class Fruit {
         this.name = name;
     }
 
-    public boolean equals(Object o) {
-        if (o instanceof Fruit) {
-            return ((Fruit) o).name.equals(name);
-        }
-        return false;
-    }
-
-    public int hashCode() {
-        return name != null ? name.hashCode() : 0;
-    }
+	@Override
+	 public boolean equals(Object o) { if (o instanceof Fruit) { return ((Fruit)o).name.equals(name); } return false; }
+	
+    public int hashCode() { return name != null ? name.hashCode() : 0; }
 
     public String toString() {
         return String.format("Fruit(%s)", name);
