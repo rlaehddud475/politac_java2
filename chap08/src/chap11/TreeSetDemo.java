@@ -2,7 +2,7 @@ package chap11;
 
 import java.util.*;
 
-public class TreeSetDemo {
+public class TreeSetDemo{
     public static void main(String[] args) {
     Set<String> set=Set.of("포도","수박","사과","키위","망고");
     HashSet<String> hashset=new HashSet<>(set);
